@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+
+      table {width: 80%;margin: auto;border: 10px solid red;padding: 40px;}
+
+      button{background-color: rgb(55, 167, 11);
+              padding: 10px 50px;
+              margin: 15px;
+              border-radius: 5px;
+              color: white;}
+
+      input[type=text],select,input[type=date] {
+            padding: 5px 15px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid grey;
+            border-radius: 5px;
+            box-sizing: border-box;
+            box-shadow: 2px 2px 5px lightblue;}
+
+      td#texto{width: 15%;padding: 10px;text-align: right;}
+
+
+      td#t1{text-align: left;font-size: 25px;padding: 25px 25px 25px 70px;}
+      td#t2{text-align: left;font-size: 25px;padding: 25px 25px 25px 70px;}
+
+  </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,49 +34,48 @@
 </head>
 <body>
    <table>
-       <tr>
-           <td id="texto">E-mail *</td>
-           <td id="campos"><input type="email"></td>
-           <td id="texto">Criar uma senha *</td>
-           <td id="campos"><input type="text"></td>
-       </tr>
+      <tr>
+        <td id="texto">E-mail *</td>
+        <td id="campos"><input type="text" size="40"></td>
+        <td id="texto">Criar uma senha *</td>
+        <td id="campos"><input type="text" size="40"></td>
+      </tr>
 
-       <tr>
+      <tr>
         <td id="texto">Repetir E-mail *</td>
-        <td id="campos"><input type="email"></td>
+        <td id="campos"><input type="text" size="40"></td>
         <td id="texto">Repetir senha *</td>
-        <td id="campos"><input type="text"></td>
+        <td id="campos"><input type="text" size="40"></td>
       </tr>
 
       <tr>
-        <td id="texto">Dados Cadastrais</td>
-        <td id="campos"></td>
-        <td id="texto">Endereço de entrega</td>
+        <td id="t1" colspan="2">Dados Cadastrais</td>
+        <td id="t2" colspan="2">Endereço de entrega</td>
         <td id="campos"></td>
       </tr>
 
 
       <tr>
-        <td id="texto"><input type="radio" value="PF" name="CP">Pessoa Fisica</td>
-        <td id="campos"><input type="radio" value="PJ" name="CP">Pessoa Juridica</td>
+        <td></td>
+        <td><input type="radio" value="PF" name="CP">Pessoa Fisica <input type="radio" value="PJ" name="CP">Pessoa Juridica</td>
         <td id="texto">CEP</td>
-        <td id="campos"><input type="text"></td>
+        <td id="campos"><input type="text" size="18"></td>
       </tr>
 
 
       <tr>
         <td id="texto">Nome *</td>
-        <td id="campos"><input type="text"></td>
+        <td id="campos"><input type="text" size="40"></td>
         <td id="texto">Rua</td>
-        <td id="campos"><input type="text"></td>
+        <td id="campos"><input type="text" size="40"></td>
       </tr>
 
 
       <tr>
         <td id="texto">Sobrenome *</td>
-        <td id="campos"><input type="text"></td>
+        <td id="campos"><input type="text" size="40"></td>
         <td id="texto">Número</td>
-        <td id="campos"><input type="text"></td>
+        <td id="campos"><input type="text" size="14"></td>
       </tr>
 
 
@@ -69,7 +94,7 @@
 
       <tr>
         <td id="texto">CPF *</td>
-        <td id="campos"><input type="text"></td>
+        <td id="campos"><input type="text" size="30"></td>
         <td id="texto">Complemento</td>
         <td id="campos"><input type="text"></td>
       </tr>
@@ -77,40 +102,41 @@
 
       <tr>
         <td id="texto">Telefone *</td>
-        <td id="campos"><input type="text"></td>
+        <td id="campos"><input type="text" size="30"></td>
         <td id="texto">Referencia</td>
-        <td id="campos"><input type="text"></td>
+        <td id="campos"><input type="text" size="40"></td>
       </tr>
 
 
       <tr>
         <td id="texto">Celular</td>
-        <td id="campos"><input type="text"></td>
+        <td id="campos"><input type="text" size="30"></td>
         <td id="texto">Bairro</td>
-        <td id="campos"><input type="text"></td>
+        <td id="campos"><input type="text" size="40"></td>
       </tr>
 
 
       <tr>
         <td id="texto">Nascimento *</td>
-        <td id="campos"><input type="text"></td>
+        <td id="campos"><input type="text" size="30"></td>
         <td id="texto">Cidade</td>
-        <td id="campos"><input type="text"></td>
+        <td id="campos"><input type="text" size="40"></td>
       </tr>
 
       <tr>
-        <td id="texto"><input type="checkbox">Receber ofertas e novidades por E-mail</td>
-        <td id="campos"></td>
+        <td id="texto"></td>
+        <td><input type="checkbox">Receber ofertas e novidades por E-mail</td>
         <td id="texto">Estado</td>
-        <td id="campos"><input type="text"></td>
+        <td id="campos"><input type="text" size="8"></td>
       </tr>
 
 
       <tr>
-        <td id="texto"><button class="button">Cadastrar</button></td>
+        <td id="texto"></td>
+        <td id="campos"><button class="button">Cadastrar</button></td>
+        <td id="texto"></td>
+        <td id="campos"></td>
       </tr>
-
-
    
    </table> 
 
