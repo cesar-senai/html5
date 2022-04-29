@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+    .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    }
+
+    .selo {
+    width: 10%;
+    margin-left: 90%;
+    margin-right: 10%;
+    }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <script>
+
+            var cont = 1;
+
+            setInterval(mudarimagem,2000);
+
+        function mudarimagem(){
+            var elemento = document.getElementById("banner");
+            if(cont == 1){
+                elemento.src = "carro1.jpg";
+            }
+
+            if(cont == 2){
+                elemento.src = "carro2.jpg";
+            }
+            
+            if(cont == 3){
+                elemento.src = "carro3.jpg";
+            }
+
+            if(cont == 4){
+                elemento.src = "carro4.jpg";
+            }
+
+            if(cont == 5){
+                elemento.src = "carro5.png";
+            }
+
+            cont++;
+
+        }
+
+    </script>
+
+    <img id="banner" src="carro1.jpg" alt="" class="center">
+
+    <img src="selo1.jpg" alt="" class="selo">
+
+</body>
+</html>
